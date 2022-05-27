@@ -1,0 +1,223 @@
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    
+    font-weight: 400;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+/* Menu */
+.menu {
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 10;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  
+  
+  .menu-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #fff;
+    margin: 0.3rem 0;
+    box-shadow: 0.1rem 0.1rem 0.3rem #222;
+    transition: transform 0.5s;
+  }
+  
+  .navbar {
+    width: 15vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -15vw;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 0 4rem;
+    z-index: 10;
+    transition: left 0.5s;
+  }
+  
+  .navbar.change {
+    left: 0;
+  }
+  
+  .navbar-link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 0;
+    color: #777;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  .navbar-link:hover {
+    color: #111;
+  }
+  /* End of Navbar */
+
+  
+  
+
+p{
+  font-size: 18px;
+  line-height: 35px;
+}
+  
+  
+
+
+
+.image{
+
+  margin-left:37%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1500px) {
+  .navbar {
+    width: 20vw;
+    padding: 2rem 0 0 2rem;
+    left: -20vw;
+  }
+
+  .menu.change {
+    left: 20vw;
+  }
+
+ 
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding-right: 0;
+  }
+
+  .navbar {
+    width: 25vw;
+    left: -25vw;
+  }
+
+  .menu.change {
+    left: 25vw;
+  }
+  body{
+    width: 100%;
+  }
+  .image{
+    margin-left:30%;
+  }
+
+}
+
+@media (max-width: 800px){
+.image{
+  margin-left:20%;
+}
+
+}
+@media (max-width: 750px) {
+  .navbar {
+    width: 30vw;
+    left: -30vw;
+  }
+
+  .menu.change {
+    left: 30vw;
+  }
+
+  
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 55.5%;
+  }
+
+  .navbar {
+    width: 40vw;
+    left: -40vw;
+  }
+
+  .menu.change {
+    left: 40vw;
+  }
+  .image{
+  width: 350px;
+  height: 250px;
+    margin-left:12%;
+  }
+  
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 40%;
+  }
+.image{
+
+width: 300px;
+height:200px ;
+}
+  .copyright {
+    width: 80%;
+  }
+}
+
+@media (max-width: 350px) {
+
+   
+.image{
+
+width: 250px;
+height: 200px ;
+margin-right: 10%;
+}
+  .copyright {
+    width: 80%;
+  }
+}
+/* End of Responsive */

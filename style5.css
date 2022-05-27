@@ -1,0 +1,275 @@
+/* Common Styles */
+
+  
+  html {
+     font-size: 62.5%; 
+    scroll-behavior: smooth;
+  }
+  
+
+  
+  
+  
+/* Menu */
+.menu {
+
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  
+  font-weight: 400;
+
+
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 10;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  
+  
+  .menu-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #fff;
+    margin: 0.3rem 0;
+    box-shadow: 0.1rem 0.1rem 0.3rem #222;
+    transition: transform 0.5s;
+  }
+  
+  .navbar {
+    font-size: 62.5%;
+
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    
+    font-weight: 400;
+
+
+
+    width: 15vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -15vw;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 0 4rem;
+    z-index: 10;
+    transition: left 0.5s;
+  }
+  
+  .navbar.change {
+    left: 0;
+  }
+  
+  .navbar-link {
+    
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 0;
+    color: #777;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  .navbar-link:hover {
+    color: #111;
+  }
+  /* End of Navbar */
+
+.back{
+width: 100%;
+height: 100%;
+background-color: rgb(175, 169, 169);
+
+}
+.back>input[type=password]
+{
+  position: relative;
+}
+
+/*buttons*/
+button{
+  margin-top: 5%;
+  
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 1px black ;
+  background-color:white;
+}
+
+ #bod{
+  
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+  
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+   
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+
+    }
+    input[type=reset]
+    {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+  }
+  
+  @media screen and(max-width:565) {
+  
+    span{
+      font-size: small;
+    }
+  }
+/*start of navy*/
+  
+  @media (max-width: 1500px) {
+    .navbar {
+      width: 20vw;
+      padding: 2rem 0 0 2rem;
+      left: -20vw;
+    }
+  
+    .menu.change {
+      left: 20vw;
+    }
+
+  
+  }
+  
+  @media (max-width: 1000px) {
+    body {
+      padding-right: 0;
+    }
+  
+    .navbar {
+      width: 25vw;
+      left: -25vw;
+    }
+  
+    .menu.change {
+      left: 25vw;
+    }
+
+  
+  }
+  
+  @media (max-width: 750px) {
+    .navbar {
+      width: 30vw;
+      left: -30vw;
+    }
+  
+    .menu.change {
+      left: 30vw;
+    }
+    .back>input{
+
+      margin-right: 10px;
+    }
+
+    
+  
+  }
+  @media (max-width: 550px) {
+
+
+    input[type=password]
+{
+      margin-right: 100px;
+    }
+
+  }
+  
+  @media (max-width: 600px) {
+    html {
+      font-size: 55.5%;
+    }
+  
+    .navbar {
+      width: 40vw;
+      left: -40vw;
+    }
+  
+    .menu.change {
+      left: 40vw;
+    }
+  
+    
+  
+
+  }
+  
+ 
+  
+  /* End of Responsive */
+  
+  
+    
+    
