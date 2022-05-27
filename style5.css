@@ -260,7 +260,8 @@ button{
     .menu.change {
       left: 40vw;
     }
-  
+  html{
+    font-size:40%; }
     
   
 
